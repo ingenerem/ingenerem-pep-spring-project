@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import com.example.entity.Account;
 
+/*This is a Repository class for Account database entity */
 @Repository
 public interface AccountRepository extends JpaRepository<Account,Integer> {
 
