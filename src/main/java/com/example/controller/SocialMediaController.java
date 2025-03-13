@@ -149,7 +149,6 @@ public class SocialMediaController {
 
         ObjectMapper oMapper = new ObjectMapper();
         String text = oMapper.readTree(body).get("messageText").asText();
-   
         int res = messageService.updateMessageText(userId, text);
         if(res==1)  
           return ResponseEntity.status(HttpStatus.OK).body(res);
